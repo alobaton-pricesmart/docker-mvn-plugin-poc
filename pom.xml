@@ -77,6 +77,16 @@
 									</build>
 								</image>
 							</images>
+							<!-- Work with a docker-machine instead DOCKER_HOST -->
+							<!-- <dockerHost>https://localhost:2376</dockerHost> -->
+							<machine>
+								<name>maven</name>
+								<autoCreate>true</autoCreate>
+								<createOptions>
+									<driver>virtualbox</driver>
+									<virtualbox-cpu-count>1</virtualbox-cpu-count>
+								</createOptions>
+							</machine>
 						</configuration>
 						<executions>
 							<execution>
